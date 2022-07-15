@@ -3,7 +3,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width:600px)"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width:600px)"/>
     
         
         
@@ -18,6 +19,8 @@
             <div class="bg-container">
 
                 <picture class="castle">
+                    <source media="(min-width: 601px)" srcset="images/newCastle.png">
+                    <source media="(max-width: 600px)" srcset="images/colormobileslice.png">
                     <img src="images/newCastle.png"  style="width: 100%">
                 </picture>
                 
@@ -25,19 +28,20 @@
 
                 <div id="aboutMe">
                     <h1>About Me</h1>
-                    <p>Originally hailing from the San Francisco Bay Area where I apprenticed with and worked alongside a professional mural artist, I pivoted to the digital realm upon relocating to Portland, Oregon. <br><br>While I do love a whimsical <br>medieval motif, you'll find no damsel in distress here!</p>  
+                    <p>Originally hailing from the San Francisco Bay Area where I apprenticed with and worked alongside a professional mural artist, I pivoted to the digital realm upon relocating to Portland, Oregon. <br><br>While I do love a whimsical <br class="break">medieval motif, you'll find no damsel in distress here!</p>  
                 </div>
 
-                <button id="aboutBanner" onclick="aboutOn()"></button>
-                <button id="workBanner" onclick="workOn()"></button>
-                <button id="artistryBanner" onclick="artistryOn()"></button>
-                <button id="contactBanner" onclick="contactOn()"></button>
+
+                <button id="aboutBanner" class="scrollButtons" onclick="aboutOn()"></button>
+                <button id="workBanner" class="scrollButtons" onclick="workOn()"></button>
+                <button id="artistryBanner" class="scrollButtons" onclick="artistryOn()"></button>
+                <button id="contactBanner" class="scrollButtons" onclick="contactOn()"></button>
 
                 <div id="scrollToWork"></div>
 
                 <div id="myWork">
                     <h1>My Work</h1>
-                    <p>I have been fortunate to have the opportunity to work with numerous <br>teams on a variety of projects.<br><br>Here are some examples of work <br>I have contributed to which I feel are particularly impactful. 
+                    <p>I have been fortunate to have the opportunity to work with numerous <br class="break">teams on a variety of projects.<br><br>Here are some examples of work <br class="break">I have contributed to which I feel are particularly impactful. 
                     </p>
                 </div>
 
@@ -53,29 +57,29 @@
                 
                 <div id="contactMe">
                     <h1>Contact Me</h1>
-                    <p>Like what you see?<br><br> Have any questions?<br><br> Know where that darn dragon <br>flew off to this time? <br><br>Let's chat!</p>
+                    <p>Like what you see?<br><br><br class="breakHide"> Have any questions?<br><br><br class="breakHide"> Know where that darn dragon <br class="break">flew off to this time? <br><br><br class="breakHide">Let's chat!</p>
                 </div>
 
                 <p id="copyright">©2022 Wendy Davenport</p>
 
             </div>
 
-            <button id="about" onclick="aboutScroll()">
+            <button class="scrollButtons" id="about" onclick="aboutScroll()">
             </button>
 
-            <button id="work" onclick="workScroll()">
-
-            </button>
-
-            <button id="artistry" onclick="artistryScroll()">
+            <button class="scrollButtons" id="work" onclick="workScroll()">
 
             </button>
 
-            <button id="contact" onclick="contactScroll()">
+            <button class="scrollButtons" id="artistry" onclick="artistryScroll()">
+
+            </button>
+
+            <button class="scrollButtons" id="contact" onclick="contactScroll()">
 
             </button>
             
-            <button id="topbtn" onclick="topScroll()"> 
+            <button id="topbtn"  class="scrollButtons" onclick="topScroll()"> 
             </button>
 
             <div id="aboutOverlay">
@@ -114,7 +118,7 @@
                     </div>
                     <div id="workOverlayText">   
                         <h1 class="overlayH">Project Examples</h1>
-                        <p class="overlayP">I have experience with all aspects of UX, from research and ideation to user testing and data synthesization. However, my backround has been centered around artistic pursuits, which have greatly influenced my design capabilities, leading to a newfound passion for UI.<br><br> When working in team settings, I am often assigned supervision of high-fidelity prototypes, as I have knowledge regarding HTML, CSS, and Javascript, allowing me to ensure pixel-perfection which will inform how the development team translates prototypes into functional, live web pages.<br><br>As I continue to gain knowledge and experience, <br>I will share more projects and insights here! </p>
+                        <p class="overlayP">I have experience with all aspects of UX, from research and ideation to user testing and data synthesization. However, my backround has been centered around artistic pursuits, which have greatly influenced my design capabilities, leading to a newfound passion for UI.<br><br><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"><br class="breakHide"> When working in team settings, I am often assigned supervision of high-fidelity prototypes, as I have knowledge regarding HTML, CSS, and Javascript, allowing me to ensure pixel-perfection which will inform how the development team translates prototypes into functional, live web pages.<br><br>As I continue to gain knowledge and experience, <br>I will share more projects and insights here! </p>
                     </div>
                 </div>
             </div>
@@ -145,7 +149,7 @@
                     </div>
                     <div id="contactOverlayText">   
                         <h1 class="overlayH">Contact Me</h1>
-                        <p class="overlayP">Email: <a href="mailto: wendyyvonnedavenport@gmail.com" id="emailLink">WendyYvonneDavenport@gmail.com</a><br><br><br><br><br>Linkedin: <a href="https://www.linkedin.com/in/wendy-davenport/" target="_blank" id="linkedinlink">Linkedin.com/in/Wendy-Davenport</a><br><br><br><br><br>Carrier Pigeon unavailable until a replacement can be found for the pigeon who was turned into a prince by some princess's kiss... Why was she kissing pigeons in the first place...?</p>
+                        <p class="overlayP">Email: <a href="mailto: wendyyvonnedavenport@gmail.com" id="emailLink">WendyYvonneDavenport@gmail.com</a><br class="break"><br class="break"><br ><br><br>Linkedin: <br class="breakHide"> <a href="https://www.linkedin.com/in/wendy-davenport/" target="_blank" id="linkedinlink">Linkedin.com/in/Wendy-Davenport</a><br class="break"><br class="break"><br><br><br>Carrier Pigeon unavailable until a replacement can be found for the pigeon who was turned into a prince by some princess's kiss... Why was she kissing pigeons in the first place...?</p>
                     </div>
                 </div>
             </div>

@@ -6,8 +6,34 @@ html, body {
     
 html {
     scroll-behavior: smooth;
-}              
-    
+} 
+
+/* @media (max-width: 600px){
+    .scrollButtons{
+        display: none;
+    }
+
+    #aboutMe{
+        display: none;
+    }
+
+    #aboutMeMobile{
+        display:block;
+        position: absolute;
+        margin-top:-100%;
+        margin-left: 20%;
+        width:31%;
+        text-align: center;
+    }
+}
+  
+#aboutMeMobile{
+    display:none;
+} */
+
+
+
+
     .bg-container {
         margin: 0%;
         background-repeat: no-repeat;
@@ -631,6 +657,10 @@ html {
         font-weight: lighter;
         font-size:1.7vw;
         margin-top: -7%;
+    }
+
+    .breakHide{
+        display:none;
     }
     
 .scroll {
