@@ -1,0 +1,493 @@
+html, body {
+    margin: 0;
+    height:100%;
+    background-color: #EAF8FF;
+}
+    
+html {
+    scroll-behavior: smooth;
+} 
+
+.bg-container {
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+    width: 100%; 
+}
+
+#about {
+    display: none;
+}
+    
+#aboutBanner {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #0000;
+    background-image: url("/images/learnMore1.png");
+    background-position: center top;
+    position: absolute;
+    margin-top: 219.5%;
+    right:24%;
+    width: 40%;
+    height: 10%;
+    border: none;
+    cursor:pointer;
+    /* border: 3px solid black; */
+}
+
+
+#aboutOverlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255,255,255, 0.75);
+    z-index: 3; 
+}
+
+    #aboutOverlayContainer {
+        display:flex;
+        position:relative;
+        margin-top: 5%;
+        margin-left:5%;
+        width: 90%;
+        height:90%; 
+        background-color: #C29596;
+        border-radius: 5px;
+        overflow-y: scroll;
+        /* border: 3px solid black; */
+    }
+
+    #aboutOverlayPic {
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    margin-top:5%;
+    /* border: 3px solid blue;  */
+    /* overflow-y: scroll;  */
+    }
+    
+#portraitimg {
+    position: absolute;
+    display:block;
+    /* max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 95%;
+    margin-left: 2.5%;
+    /* margin-top: 2%; */
+    /* border-radius: 5%; */
+    /* border: solid 10px white; */
+} 
+
+#aboutOverlayText{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlayH {
+    text-align: center;
+    margin-top: 5%;  
+}
+.overlayP {
+    text-align: center;
+    margin-top: 105%;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom:50px;
+}
+
+.closeButton{
+    background-repeat: no-repeat;
+    background-color: #0000;
+    background-size: contain;
+    position: fixed;
+    width: 7%;
+    height: 7%;
+    border: none;
+    z-index: 4;
+    left: 86.5%;
+    top: 5%;
+}
+
+#aboutOverlayClose {
+    background-image: url("/images/closePink1.png");
+}
+
+#work {
+    display: none;
+}
+
+#workBanner {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #0000;
+    background-image: url("/images/seeExamples1.png");
+    position: absolute;
+    margin-top: 436%;
+    right:26%;
+    width: 40%;
+    height: 15%;
+    border: none;
+    cursor: pointer;
+    /* border: 3px solid black; */
+}
+
+#workOverlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255,255,255, 0.75);
+    /* background-color: rgba(0,0,0,0.7);  */
+    z-index: 3; 
+    /* border: 3px solid blue; */
+}
+
+    #workOverlayContainer {
+        display:flex;
+        position:relative;
+        margin-top: 5%;
+        margin-left:5%;
+        width: 90%;
+        height:90%; 
+        background-color: #C88161;
+        border-radius: 5px;
+        overflow-y: scroll;
+        /* border: 3px solid black; */
+    }
+
+    #workOverlayText{
+        width:100%;
+        height: 100%;
+        position: absolute;
+}
+
+#workOverlayText .overlayP {
+    margin-top:  -4%;
+} 
+#workOverlayText .overlayH {
+    margin-top:  5%;
+} 
+
+    #workOverlayLinks {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top: 60%;
+    /* margin-left: 50%; */
+    /* border: 3px solid blue;   */
+    }
+
+    #workOverlayClose {
+    background-image: url("/images/closeOrange1.png");
+    
+}
+
+#dontShootThmb {
+    position: absolute;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 25px solid transparent;
+    border-radius: 2%;
+    border-image: none;
+}
+
+#nuanceThmb {
+    position: absolute;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 85%;
+    border: 25px solid transparent;
+    border-radius: 2%;
+    border-image: none;
+}
+
+#artistry {
+    display:none;
+    }
+
+#artistryBanner {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #0000;
+    background-image: url("/images/viewgallery1.png");
+    background-position: center top;
+    position: absolute;
+    margin-top: 659%;
+    right:24%;
+    width: 40%;
+    height: 15%;
+    border: none;
+    cursor: pointer;
+    /* border: 3px solid black; */
+    }
+
+#galleryOverlayClose {
+    background-image: url("/images/closeGreen1.png");
+}
+
+#galleryOverlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255,255,255, 0.75);
+    overflow-y: scroll;
+    z-index: 3; 
+    }
+
+    #galleryOverlayContainer {
+        display:flex;
+        position:relative;
+        margin-top: 5%;
+        margin-left:5%;
+        width: 90%;
+        height:90%; 
+        background-color: #7E8372;
+        border-radius: 5px;
+        overflow-y: scroll;
+        /* border: 3px solid black; */
+    }
+
+    #galleryOverlayText{
+    background-color:#7E8372 ;
+    position: absolute; 
+    width: 90%;
+    height: 18%;
+    margin-left: 5%;
+    /* border: 3px solid black; */
+    }
+
+#resumeH {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+}
+
+    #resumePicContainer {
+    position:absolute;
+    width:80%;
+    height:100%; 
+    }
+    
+#resumePic {
+    position: absolute;
+    display:block;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 35%;
+    border: 5px solid white;
+    border-radius: 1%;
+    
+} 
+
+#downloadResume{
+    position: absolute;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 175%;
+    padding-bottom: 5%;
+}
+
+#contact {
+    display: none;
+    }
+
+#contactBanner {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #0000;
+    background-image: url("/images/getInTouch1.png");
+    position: absolute;
+    margin-top: 883%;
+    right:24.5%;
+    width: 40%;
+    height: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+#contactOverlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255,255,255, 0.75);
+    z-index: 3; 
+    }
+
+    #contactOverlayContainer {
+    display:flex;
+    position:relative;
+    margin-top: 5%;
+    margin-left:5%;
+    width: 90%;
+    height:90%; 
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: #C6A85F; 
+    }
+
+    #contactOverlayPic {
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    overflow-y: scroll; 
+    }
+    
+#windowPic {
+    position: absolute;
+    display:block;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: -20%;
+    border-radius: 5%;
+} 
+
+#contactOverlayText{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+
+#contactOverlayText .overlayP{
+    margin-top: 80%;
+}
+
+#contactOverlayClose {
+    background-image: url("/images/closeYellow1.png");
+}
+
+#emailLink:link{
+    color: black;
+    text-decoration: none;
+}
+
+#emailLink:active{
+    color: white;
+}
+
+#linkedinLink:link{
+    color: black;
+    text-decoration: none;
+}
+
+#linkedinLink:visited {
+    color: black;
+}
+
+#linkedinLink:active{
+    color: white;
+}
+
+#topbtn {
+    display:none;
+    }
+
+
+h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 8vw;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    font-size:4.5vw;
+    margin-top: -7%;
+}
+
+.scroll {
+position: relative;
+width: 100%;
+}
+
+#aboutMe {
+position: absolute;
+margin-top:-828.5%;
+margin-left: 30%;
+width:50%;
+text-align: center;
+}
+
+#scrollToAbout {
+display:none;
+}
+
+#myWork {
+position: absolute;
+margin-top:-605%;
+margin-left: 28%;
+width:55%;
+text-align: center; 
+}
+
+.break{
+    display:none;
+}
+
+#scrollToWork {
+display:none;
+}
+
+#ArtistryMe {
+position: absolute;
+margin-top:-384%;
+margin-left: 28%;
+width:55%;
+text-align: center;
+}
+
+#scrollToArtistry {
+display:none;
+}
+
+#contactMe {
+position: absolute;
+margin-top:-161%;
+margin-left: 28%;
+width:55%;
+text-align: center;
+}
+
+#scrollToContact {
+display:none;
+}
+
+#copyright {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width:auto;
+text-align: center;
+}
+
