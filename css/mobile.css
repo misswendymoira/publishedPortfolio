@@ -29,8 +29,8 @@ html {
     position: absolute;
     margin-top: 219.5%;
     right:24%;
-    width: 200px;
-    height:70px;
+    width: 40%;
+    height: 10%;
     border: none;
     cursor:pointer;
     /* border: 3px solid black; */
@@ -141,8 +141,8 @@ html {
     position: absolute;
     margin-top: 436%;
     right:26%;
-    width: 200px;
-    height: 90px;
+    width: 40%;
+    height: 15%;
     border: none;
     cursor: pointer;
     /* border: 3px solid black; */
@@ -236,8 +236,8 @@ html {
     position: absolute;
     margin-top: 659%;
     right:24%;
-    width: 200px;
-    height: 80px;
+    width: 40%;
+    height: 15%;
     border: none;
     cursor: pointer;
     /* border: 3px solid black; */
@@ -328,8 +328,8 @@ html {
     position: absolute;
     margin-top: 883%;
     right:24.5%;
-    width: 200px;
-    height: 70px;
+    width: 40%;
+    height: 10%;
     border: none;
     cursor: pointer;
 }
